@@ -1,0 +1,66 @@
+--> React JS: It is an open-source, cross-platform JavaScript library. Which is used to
+develop User Interface (UI) (front-end).
+
+--> It is known as view layer of the applications (Presentation Layer).
+--> It is maintained by Facebook.
+--> React JS: Web Applications.
+--> React Native: Mobile Applications.
+
+--> With the help of react we cab develop SPA (Single Page Applications).
+
+--> Features of React JS: 
+
+    -> Component Based Architecture: It is all about component. It is used for reuability. With the help of
+        it we can divide our application into a small pieces of code.
+
+    -> Support JSX (JavaScript Syntax Extension): With the help of JSX we can write html code within JavaScript.
+       The code is more clear and readable (easy to understand).
+
+    -> **But browser doesn't understand JSX. So, in react we have a Babel Transpilar with Transpile or Compile JSX Code into JS.
+
+--> ** Virtual DOM: It is a simple copy of DOM. It is a virtual representation of DOM.
+
+--> When new element are added to the UI, It creates a new Virtual DOM tree. Then it compares to the previous copy.
+    After it only the new part is updated in the Real DOM. That's why the reason the performance is fast.
+
+--> Environmental Setup (Installation):- 
+    -> Node JS
+    -> https://nodejs.org/en/download/package-manager
+    --> Check node is install or not.
+        -> cmd/terminal
+            node --v
+
+--> How we create react applications:
+    npx create-react-app appname
+
+npx create-react-app demo
+
+cd demo
+npm start
+
+--> How we run a react application
+    -> Open App folder in cmd/terminal
+       npm start (3000 port in oyur default browser).
+
+--> Folder and directory structure:-
+    -> node_modules: In that folder all node related modules are store. They used in react to create applications.
+    -> public: Global folder where we store assets (CSS/Images/JS).
+        index.html: Main html file which execute when react app is serve or load.
+
+    -> src: It is a main folder, all components, services we can create here.
+        -> index.js: Main JavaScript entry point file
+        -> App.js: default component.
+        -> App.test.js: Testing file of App component.
+        -> .gitignore
+        -> package.json{}: All node_modules dependencies are defined.
+        -> package-lock.json{}: dependencies with their version are defined.
+        -> README.md: All the project details we mention in the file.
+
+--> How react application is boot or execute:
+    index.html
+    <div id="root"></div>
+    --> boot --> src/index.js --> get the id root from the index.html and load the App
+    component (default component) in the div id root.
+
+
+
